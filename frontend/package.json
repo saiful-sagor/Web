@@ -52,5 +52,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.1"
-  }
+  },
+
+  "proxy":"http://localhost:4000"
 }
