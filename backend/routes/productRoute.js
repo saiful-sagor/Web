@@ -7,11 +7,11 @@ const {getAllProducts,createProduct,updateProduct,deleteProduct,getProductDetail
 
 router.route("/product").get(getAllProducts);
 router.route("/product/new").post(createProduct);
-/*
-router
-  .route("/product/new")
-  .get(isAuthenticatedUser, authorizeRoles("admin"), createProduct);
-  */
+router.route("/product/:id").get(getProductDetails)
+// router
+//   .route("/product/new")
+//   .get(isAuthenticatedUser, authorizeRoles("admin"), createProduct);
+
 
 router.
 route("/product/:id")

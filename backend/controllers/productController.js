@@ -56,24 +56,27 @@ exports.getAllProducts = async (req, res, next) => {
     res.status(200).json({
       success: true,
       products
+
     });
   };
+
 /*
-exports.getAllProducts = catchAsyncErrors(async (req, res, next) => {
-  const resultPerPage = 8;
-  const productsCount = await Product.countDocuments();
 
-  const apiFeature = new ApiFeatures(Product.find(), req.query)
-    .search()
-    .filter();
 
-  let products = await apiFeature.query;
+// exports.getAllProducts = catchAsyncErrors(async (req, res, next) => {
+//   const resultPerPage = 8;
+//   const productsCount = await Product.countDocuments();
 
-  let filteredProductsCount = products.length;
+//   const apiFeature = new ApiFeatures(Product.find(), req.query)
+//     .search()
+//     .filter();
 
-  apiFeature.pagination(resultPerPage);
+//   let products = await apiFeature.query;
 
-  products = await apiFeature.query;
+//   let filteredProductsCount = products.length;
+
+//   apiFeature.pagination(resultPerPage);
+
 
   res.status(200).json({
     success: true,
@@ -84,6 +87,8 @@ exports.getAllProducts = catchAsyncErrors(async (req, res, next) => {
   });
 });
 */
+
+
 /*
 exports.getProductDetails = async (req, res, next) => {
 
