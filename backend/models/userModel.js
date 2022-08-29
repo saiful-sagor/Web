@@ -22,7 +22,8 @@ const userSchema = new mongoose.Schema({
       required: [true, "Please Enter Your Password"],
       minLength: [8, "Password should be greater than 8 characters"],
       select: false,
-    },
+    }, 
+    /*
     avatar: {
       public_id: {
         type: String,
@@ -41,6 +42,7 @@ const userSchema = new mongoose.Schema({
       type: Date,
       default: Date.now,
     },
+    */
   
     resetPasswordToken: String,
     resetPasswordExpire: Date,
