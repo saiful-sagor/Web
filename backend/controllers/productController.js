@@ -60,6 +60,9 @@ exports.getAllProducts = async (req, res, next) => {
     });
   };
 
+/*
+
+
 // exports.getAllProducts = catchAsyncErrors(async (req, res, next) => {
 //   const resultPerPage = 8;
 //   const productsCount = await Product.countDocuments();
@@ -74,18 +77,18 @@ exports.getAllProducts = async (req, res, next) => {
 
 //   apiFeature.pagination(resultPerPage);
 
-//   products = await apiFeature.query;
 
-//   console.log("hi")
+  res.status(200).json({
+    success: true,
+    products,
+    productsCount,
+    resultPerPage,
+    filteredProductsCount,
+  });
+});
+*/
 
-//   res.status(200).json({
-//     success: true,
-//     products,
-//     productsCount,
-//     resultPerPage,
-//     filteredProductsCount,
-//   });
-// });
+
 /*
 exports.getProductDetails = async (req, res, next) => {
 
@@ -214,5 +217,46 @@ exports.deleteProduct = catchAsyncErrors(async (req, res, next) => {
   res.status(200).json({
     success: true,
     message: "Product Delete Successfully",
+  });
+});
+
+exports.createProductReview = catchAsyncErrors(async (req, res, next) => {
+  const { rating, comment, productId } = req.body;
+
+  const review = {
+    user: req.user._id,
+    name: req.user.name,
+    rating: Number(rating),
+    comment,
+  };
+
+  const product = await Product.findById(productId);
+
+  const isReviewed = product.reviews.find(
+    (rev) => rev.user.toString() === req.user._id.toString()
+  );
+
+  if (isReviewed) {
+    product.reviews.forEach((rev) => {
+      if (rev.user.toString() === req.user._id.toString())
+        (rev.rating = rating), (rev.comment = comment);
+    });
+  } else {
+    product.reviews.push(review);
+    product.numOfReviews = product.reviews.length;
+  }
+
+  let avg = 0;
+
+  product.reviews.forEach((rev) => {
+    avg += rev.rating;
+  });
+
+  product.ratings = avg / product.reviews.length;
+
+  await product.save({ validateBeforeSave: false });
+
+  res.status(200).json({
+    success: true,
   });
 });

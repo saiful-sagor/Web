@@ -40,7 +40,6 @@ router
   .put(isAuthenticatedUser, authorizeRoles("admin"), updateUserRole)
   .delete(isAuthenticatedUser, authorizeRoles("admin"), deleteUser);
 
-
 router.route("/logout").get(logout);
 
 module.exports = router;
