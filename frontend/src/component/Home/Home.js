@@ -1,17 +1,12 @@
 import React, { Fragment, useEffect } from "react";
 import { CgMouse } from "react-icons/all";
 import "./home.css";
-import Product from "./Product.js";
+import Product from "./ProductCard.js";
 import MetaData from "../layout/MetaData";
 import { getProduct } from "../../actions/productAction";
 import { useSelector, useDispatch } from "react-redux";
 
-const product = {
-  name: "Blue Tshirt",
-  images: [{ url: "https://i.ibb.co/DRST11n/1.webp" }],
-  price: "$300",
-  _id: "sagor",
-};
+
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -22,6 +17,8 @@ const Home = () => {
   useEffect(() => {
     dispatch(getProduct());
   }, [dispatch]);
+
+  
 
   return (
     <Fragment>
@@ -41,9 +38,9 @@ const Home = () => {
 
       <h2 className="homeHeading">Featured Products</h2>
 
-      <div className="container" id="container">
+       <div className="container" id="container">
         {products && products.map((product) => <Product product={product} />)}
-      </div>
+      </div> 
     </Fragment>
   );
 };
