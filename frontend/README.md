@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# E-commerce site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Name : E-Commerce
 
-## Available Scripts
+> Hello Everyone, Welcome to my Repository! This is a fully Responsive e-commerce website.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Project Status](#project-status)
+- [Room for Improvement](#room-for-improvement)
+- [Acknowledgements](#acknowledgements)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## General Information
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- This is a full responsive e-commerce website.
+- These are the advantages of an e-commerce site.
 
-### `npm test`
+  1.  Faster buying process
+  2.  Store and product listing creation
+  3.  Cost reduction
+  4.  Affordable advertising and marketing
+  5.  Flexibility for customers
+  6.  No reach limitations
+  7.  Product and price comparison
+  8.  Faster response to buyer/market demands
+  9.  Several payment modes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- This project was made for our WEB Web Technologies lab course.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- CSS
+- MongoDB
+- React JS
+- NODE JS
+- Express
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Here are the ready features of this project:
 
-### `npm run eject`
+- User-friendly navigation
+- Shopping cart
+- Search bar
+- Text content
+- Contact us
+- Product title
+- Add to cart button
+- product list
+- Nice Footer
+- Last of all It is fully responsive for all type of device.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- ## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Example screenshot](./images/screenshot2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Example screenshot](./images/screenshot3.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Example screenshot](./images/screenshot4.png)
 
-## Learn More
+![Example screenshot](./images/screenshot5.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Example screenshot](./images/screenshot6.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Example screenshot](./images/screenshot7.png)
 
-### Code Splitting
+![Example screenshot](./images/screenshot1.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Example screenshot](./images/Screenshot8.png)
 
-### Analyzing the Bundle Size
+![Example screenshot](./images/Screenshot9.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Example screenshot](./images/Screenshot10.png)
 
-### Making a Progressive Web App
+![Example screenshot](./images/Screenshot11.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Example screenshot](./images/Screenshot12.png)
 
-### Advanced Configuration
+![Example screenshot](./images/Screenshot13.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Example screenshot](./images/Screenshot14.png)
 
-### Deployment
+![Example screenshot](./images/Screenshot15.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Example screenshot](./images/Screenshot16.png) -->
 
-### `npm run build` fails to minify
+<!-- If you have screenshots you'd like to share, include them here. -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Setup
+
+- You have to install vscode on your machine.
+- Install Node Js on your machine
+- Then Download and open folder on your vscode and go to the main project directory and
+
+**For Backend**- `npm i` [on main directory]
+
+**For Frontend** - `cd frontend` and then ` npm i`
+
+## Project Status
+
+Our Project is : _in progress_.Some functionality is stil on development phase.We will update that shortly.
+
+## Room for Improvement
+
+To do:
+
+- Seller API
+- Transaction system
+
+## Acknowledgements -->
+
+Project Showcasing video [Here](https://drive.google.com/file/d/1o1ZN2AKFOOuVnHOCb1WShHzA-69Va0lO/view?usp=sharing).
