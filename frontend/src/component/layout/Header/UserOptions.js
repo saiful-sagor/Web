@@ -13,14 +13,25 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../../actions/userAction";
 
 const UserOptions = (user) => {
+
+  const { cartItems } = useSelector((state) => state.cart);
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
-//   const alert = useAlert();
+  //   const alert = useAlert();
   const dispatch = useDispatch();
 
   const options = [
     { icon: <ListAltIcon />, name: "Orders", func: orders },
     { icon: <PersonIcon />, name: "Profile", func: account },
+    {
+      icon: (
+        <ShoppingCartIcon
+          style={{ color: cartItems.length > 0 ? "tomato" : "unset" }}
+        />
+      ),
+      name: `Cart(${cartItems.length})`,
+      func: cart,
+    },
     { icon: <ExitToAppIcon />, name: "Logout", func: logoutUser },
   ];
 
@@ -75,7 +86,6 @@ const UserOptions = (user) => {
             tooltipOpen={window.innerWidth <= 600 ? true : false}
           />
         ))}
-
       </SpeedDial>
     </Fragment>
   );
