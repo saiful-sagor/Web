@@ -11,12 +11,14 @@ import { clearErrors, login, register } from "../../actions/userAction";
 import { useAlert } from "react-alert";
 import { useNavigate } from "react-router-dom";
 
-const LoginSignUp = ({history}) => {
+const LoginSignUp = ({ history }) => {
   const dispatch = useDispatch();
   let navigate = useNavigate();
   // const alert = useAlert();
 
-  const { error, loading,isAuthenticated } = useSelector((state) => state.user);
+  const { error, loading, isAuthenticated } = useSelector(
+    (state) => state.user
+  );
 
   const loginTab = useRef(null);
   const registerTab = useRef(null);
@@ -33,7 +35,6 @@ const LoginSignUp = ({history}) => {
 
   const { name, email, password } = user;
 
-
   const [avatar, setAvatar] = useState();
   const [avatarPreview, setAvatarPreview] = useState({ image });
 
@@ -43,7 +44,6 @@ const LoginSignUp = ({history}) => {
   };
 
   const registerSubmit = (e) => {
-    
     e.preventDefault();
     const myForm = new FormData();
     myForm.set("name", name);
@@ -76,9 +76,9 @@ const LoginSignUp = ({history}) => {
       alert("Failed!");
       dispatch(clearErrors());
     }
-    
-    if (isAuthenticated===true) {
-         navigate("/account")
+
+    if (isAuthenticated === true) {
+      navigate("/account");
     }
   }, [dispatch, error, history, isAuthenticated]);
 

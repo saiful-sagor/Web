@@ -62,6 +62,11 @@ const UserOptions = (user) => {
     alert("Logout Successfully");
   }
 
+  // if (isAuthenticated === false){
+  //   navigate("/login");
+  // }
+
+
   return (
     <Fragment>
       <Backdrop open={open} style={{ zIndex: "10" }} />
